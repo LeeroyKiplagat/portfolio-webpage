@@ -23,7 +23,7 @@ const Projects = ({projects}: Props) => {
       <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80 scrollbar-thin">
         {projects?.map((project, i) => (
           // eslint-disable-next-line react/jsx-key
-          <div className="w-screen flex-shrink-0 snap-center flex flex-col space-y-10 items-center justify-center p-24 md:p-[300px] lg:p-[450px] h-screen ">
+          <div key={i} className="w-screen flex-shrink-0 snap-center flex flex-col space-y-10 items-center justify-center p-24 md:p-[300px] lg:p-[450px] h-screen ">
             <motion.img
               initial={{ y: -300, opacity: 0 }}
               transition={{ duration: 1.2 }}
