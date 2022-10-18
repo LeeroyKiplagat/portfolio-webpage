@@ -4,11 +4,12 @@ interface SanityBody {
   _rev: string;
   _updatedAt: string;
 }
+
 interface Image {
   _type: "image";
   asset: {
     _ref: string;
-    _type: "refrence";
+    _type: "reference";
   };
 }
 export interface PageInfo extends SanityBody {
